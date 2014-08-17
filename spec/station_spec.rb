@@ -20,7 +20,6 @@ describe Station do
 		test_station = Station.new({'name' => 'Portland'})
 		test_station.save
 		Train_line.stop(test_train_line.id, test_station.id)
-		binding.pry
 		Train_line.stop(test_train_line1.id, test_station.id)
 		train_lines = Train_line.station_train_line_list(test_station.id)
 		expect(train_lines).to eq [test_train_line, test_train_line1]
