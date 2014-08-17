@@ -12,4 +12,5 @@ Allows a train rider to view train lines, stations and view which train lines st
 
 Either clone this repository or download the .zip and open in your console or sublime.  You will need to create your own database.
 
-##License MIT
+##License 
+MIT
