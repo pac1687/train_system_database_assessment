@@ -5,4 +5,10 @@ describe Train_line do
 		test_train_line = Train_line.new({'name' => 'Grasshopper'})
 		expect(test_train_line).to be_an_instance_of Train_line
 	end
+
+	it 'saves a new train_line to the database' do
+		test_train_line = Train_line.new({'name' => 'Grasshopper'})
+		test_train_line.save
+		expect(Train_line.all).to eq [test_train_line]
+	end
 end
